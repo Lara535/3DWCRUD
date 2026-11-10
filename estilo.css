@@ -1,0 +1,174 @@
+/* Paleta Coraline: Azul Noturno & Amarelo Capa de Chuva */
+:root {
+    --coraline-yellow: #ffd000;
+    --coraline-yellow-hover: #e6bb00;
+    --bg-dark-blue: #121629;
+    --card-bg-blue: #1e2440;
+    --input-bg-blue: #15192e;
+    --border-blue: #2d365c;
+    --text-white: #f0f3f8;
+    --danger-red: #ff5252;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark-blue);
+    color: var(--text-white);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--coraline-yellow);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 12px rgba(255, 208, 0, 0.3);
+}
+
+h3 {
+    color: var(--coraline-yellow);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Formulário */
+form {
+    background-color: var(--card-bg-blue);
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-blue);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+form table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-blue);
+    border-radius: 6px;
+    background-color: var(--input-bg-blue);
+    color: var(--text-white);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: var(--coraline-yellow);
+    box-shadow: 0 0 8px rgba(255, 208, 0, 0.4);
+}
+
+/* Botões */
+button {
+    background-color: var(--coraline-yellow);
+    color: var(--bg-dark-blue);
+    border: none;
+    padding: 10px 22px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 4px;
+}
+
+button:hover {
+    background-color: var(--coraline-yellow-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 208, 0, 0.3);
+}
+
+button[type="reset"], 
+button[type="button"] {
+    background-color: transparent;
+    color: var(--coraline-yellow);
+    border: 1px solid var(--coraline-yellow);
+}
+
+button[type="reset"]:hover, 
+button[type="button"]:hover {
+    background-color: rgba(255, 208, 0, 0.15);
+}
+
+/* Tabela de Listagem */
+table[border="1"] {
+    width: 100%;
+    max-width: 650px;
+    border-collapse: collapse;
+    background-color: var(--card-bg-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-blue);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border: none;
+}
+
+th {
+    background-color: #0c0f1d;
+    color: var(--coraline-yellow);
+    font-weight: 700;
+    border-bottom: 2px solid var(--coraline-yellow);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+tr {
+    border-bottom: 1px solid var(--border-blue);
+}
+
+tr:hover {
+    background-color: rgba(255, 208, 0, 0.05);
+}
+
+/* Links */
+a {
+    color: var(--coraline-yellow);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a[href*="excluir"] {
+    color: var(--danger-red);
+}
+
+a[href*="excluir"]:hover {
+    color: #ff7878;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-blue);
+    margin: 30px 0;
+    width: 100%;
+    max-width: 650px;
+}
